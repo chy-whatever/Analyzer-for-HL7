@@ -36,7 +36,7 @@ int ExtString(CString str, CString split, CStringArray& strArray)
 	int nCount = 0;
 	strArray.RemoveAll();
 	while (str.Find(_T(split)) != -1)
-		//detect¡°|¡±
+		//detect|
 	{
 		strTemp = str.Left(str.Find(_T(split)));
 		//extract string
@@ -73,7 +73,7 @@ CString GetMessageByHead(CString strFilePath, CString strHead, int num)
 	}
 	else
 	{
-		//Log::WriteLog("fall open the fail£¡");
+		//Log::WriteLog("fall open the failÂ£Â¡");
 		return "";
 	}
 
